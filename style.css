@@ -1,0 +1,95 @@
+/* Mereset margin bawaan browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Membuat background gelap dan menempatkan kotak di tengah layar */
+body {
+    background-color: #121212; /* Warna latar gelap */
+    color: #ffffff; /* Teks warna putih */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Kotak utama pembungkus aplikasi */
+.container {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #f3ba2f; /* Warna kuning khas crypto/Binance */
+}
+
+/* Area pencarian */
+.search-box {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.input-keyword {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #333;
+    background-color: #2c2c2c;
+    color: white;
+    border-radius: 6px 0 0 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-keyword:focus {
+    border-color: #0d6efd;
+}
+
+#button-addon2 {
+    padding: 12px 20px;
+    border: none;
+    background-color: #0d6efd; /* Warna biru */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0 6px 6px 0;
+    transition: background-color 0.3s;
+}
+
+#button-addon2:hover {
+    background-color: #0b5ed7; /* Biru sedikit lebih gelap saat disentuh mouse */
+}
+
+/* Kotak hasil data dari API */
+.result {
+    background-color: #252525;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    min-height: 140px;
+}
+
+/* Desain untuk teks yang dimasukkan lewat JavaScript innerHTML */
+.result h2 {
+    color: #ffffff;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+.result h5 {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #cccccc;
+}
