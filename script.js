@@ -14,7 +14,7 @@ searchButton.addEventListener('click', function() {
     resultContainer.innerHTML = '<p>Sedang mengambil data pasar...</p>';
 
     // 1. INI DIA TEMPAT API KEY KAMU DISIMPAN 🔑
-    const apiKey = 'M4FWAFD00OM5XF12'; 
+    const apiKey = 'V89NGFMTWAF5K3IB'; 
     
     // 2. Tendang bola ke Endpoint API Alpha Vantage khusus Crypto
     const url = `https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=${keyword}&to_currency=USD&apikey=${apiKey}`;
